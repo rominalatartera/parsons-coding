@@ -1,0 +1,30 @@
+body{background-color: #000000;}
+#romi, p, h2, a, h3, h1 {font-family: Arial;color: #ffffff;}
+
+	main { max-width: 1500px; }
+	section { max-width: 1000px; margin: 10px auto; padding: 0 20px; }
+	img {width: 70%}
+	figure {width: 25%; margin: auto;}
+/* Overrides desktop style when viewport is less than 600px (for smart phones) */
+@media only screen and (max-width: 600px) {
+    
+}
+html {
+font-family: Arial;
+}
+main { max-width: 1500px;border: 5px solid yellow; }
+	section { max-width: 1000px; margin: 10px auto; padding: 0 20px; border: 5px solid yellow; }
+	img {width: 100%}
+	figure {width: 25%; margin: auto;}
+	header {border: 5px solid white; }
+	article {border: 5px solid white; display flex}
+	img {border: 5px solid blue; }
+	figure {border: 5px solid yellow; }
+	. text {border: 5px solid pink; } 
+	nav ul {display: flex; list-style: none ;}
+	nav a {text-decoration: none; display: block; padding: 5px; background: grey; color: white; margin: 5px }
+	
+/* Overrides desktop style when viewport is less than 600px (for smart phones) */
+@media only screen and (max-width: 600px) { article  {display : block;} 
+nav ul {display: block}
+}

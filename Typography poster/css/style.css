@@ -1,0 +1,30 @@
+html{
+    background-color: black;
+}
+
+.filltext
+{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    font-size: 180px;
+    color: white;
+    background-image: url("../newyork2.webp");
+    -webkit-text-fill-color: transparent;
+    background-clip:inherit;
+    -webkit-background-clip: text;
+    font-family: 'Times New Roman', Times, serif;
+    animation: animate 4s ease-in-out alternate infinite;
+}
+@keyframes animate
+{
+    from
+    {
+        background-position: 30% center;
+    }
+    to
+    {
+        background-position: 70% center;
+    }
+}

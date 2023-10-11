@@ -1,0 +1,85 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+	body {
+	line-height: 1;
+	}
+	ol, ul {
+	list-style: none;
+	}
+	blockquote, q {
+	quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+	content: '';
+	content: none;
+	}
+	table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	} 
+	 /*  end reset  */
+
+	/* place your css here and not in an external style sheet. */
+
+	main { max-width: 1500px; }
+	section { max-width: 1000px; margin: 10px auto; outline: 2px solid black;}
+	ol, ul {list-style: decimal; padding: 20px;}
+	h1, h2, h3, h4, h5, h6 {font-size: 1.5em; font-weight: 700; color: #555; padding: 30px 0 10px;}
+	p, li {margin: 7px 0 3px; line-height: 1.2em}
+	header {background: orange;} 
+	article {background: silver;}
+	article li {background-color: lightgreen}
+	h1 {color: gold;
+    font-size: 3em;
+    background: black;
+    text-align: center;}
+    h2 {background: yellow;
+    padding-left: 35px;}
+    #type span {background: rebeccapurple;
+    color: white;}
+    article li:nth-child(odd) {
+    background: lightblue;}
+    #universal span {background: red; color: white;}
+    #type p {font-weight: bold;}
+    body {padding: 10px 25px; background: pink;}
+    h2 {font-size: 1.5em;font-weight: 700;color: #555;padding: 30px 0 10px;}
+    header ul li {display: inline-block;}
+    * {outline: 1px solid blue;}
+    * {box-sizing: border-box;}
+    #universal * {background: silver;}
+    header nav ul li a {text-decoration: none; background: red; color: white; padding: 10px 20px; margin: 2px; display: block;}
+    nav a:hover {background: green;}
+    @media screen and (max-width: 600px) {nav li {display: block;}
+}
+    
+
+	

@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* mi version */
+html {
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+body {
+    width:100%;
+    margin: 0;
+    font-family:'lato', sans-serif;
+    max-width: 1440px;
+    min-width: 600px;
+    max-height: 1440px;
+} 
+
+
+/* Top Header Styling */
+ #top-header {
+    text-align: center;
+}
+
+#top-header img{
+    width: 400px;
+    height: auto;
+    transition-property:transform;
+    transition: 1s;
+}
+#top-header img:hover {
+    transform: scale(.5,.5);
+}
+
+
+#top-header h1 {
+    padding:0%;
+    margin:0;
+    font-weight:700;
+}  
+    
+.side-logo img {
+   margin-top: 50px;
+   width: 15%;
+   height: auto;
+}
+
+/* Navigation System Styling */
+nav {
+    background-color:white;
+    animation-name: nav-an;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    position:fixed;
+    z-index: 2;
+    top:0;
+    width: 100%;
+}
+
+@keyframes nav-an {
+    from {background-color: white;}
+    to {background-color:rgb(39, 38, 38);}
+}
+
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+display: inline-block;
+width: 15%;
+height: auto;
+/* outline: solid 2px red; */
+text-align: center;
+color: white;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    color: rgb(193, 189, 189);
+} 
+
+nav a:hover {
+    color: white;
+}
+
+/* Main Content Styling */
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em;
+    /* background-color: yellow; */
+}
+
+main ol {
+    list-style-type: none;
+}
+main ul {
+    list-style-type: none;
+}
+
+main ul a{
+ text-decoration: none;
+ color: black;
+}
+
+main ul a:hover{
+    color: red;
+}
+
+main h1 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Floating Images- The core of who I am Page */
+
+.float-figure-left {
+    float: left;
+}
+ .float-figure-left img{
+   width: 150px;
+   height: auto;
+}
+
+.clear-float::after{
+    content: "";
+    display: block;
+    clear:both;
+    height: 2em;
+}
+
+.float-figure-left a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-weight: bold;
+    /* outline: solid 2px green; */
+}
+
+.float-figure-left a:hover {
+    color: red;
+}
+
+.big-img img{
+    width: 250px;
+    height: auto;} 
+
+.country-img img{
+    width:20%;
+    height:auto
+}
+
+.school-img img{
+    width: 25%;
+    height: auto;
+}
+
+
+/* jumbo-links styling- Core of who I am Page */
+
+.jumbo-links {
+    margin-bottom: 100px;
+}
+
+.jumbo-links li {
+    display: inline;
+    padding: 10px;
+    background-color: rgb(233, 233, 233);
+}
+
+.jumbo-links li a{
+    text-decoration: none;
+    color: black;
+}
+
+.jumbo-links li:hover, .jumbo-links li a:hover {
+    background-color: white;
+    color: red;
+}
+
+    /* Grid- Works Page */
+
+    #works-grid {
+    display: grid;
+    width: 620px;
+    margin: 100px auto;
+    grid-template-rows: repeat(2, 196px);
+    grid-template-columns: repeat(4, 152px);
+}
+
+
+#works-grid figure img {
+    width: 150px;
+    height: 194.5px;
+    opacity: .1;
+    transition: .5s;
+    }
+
+    #works-grid figcaption {
+        text-align: center;
+        font-size: 15px;
+        width: 150px;
+        position: relative;
+        bottom: 97.25px;
+        z-index: 2;
+    }
+
+#works-grid figure img:hover{
+    opacity: 1;
+    position: relative;
+    z-index: 3;
+    } 
+
+
+
+
+    /* Footer Styling */
+
+    #bottom-footer {
+        position: sticky;
+        z-index: 3;
+        bottom:0;
+        background-color: rgb(233, 233, 233);
+        padding: 1em;
+        width: 100%;
+    }
+
+
+
+/* Iphon media query */
+@media screen and (min-width: 320px) {
+    #top-header img {
+        width: 550px;
+    }
+  main {
+    width: 90%;
+    margin-bottom: 100px;
+  }
+
+  /* core of who I am page */
+.jumbo-links li {
+    display:block;
+}
+
+/* works page */
+#works-grid {
+    width: 320px;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(4,194.5px);
+}
+}
+
+/* ipad media query */
+
+@media screen and (min-width: 768px) {
+    #top-header img {
+        width: 700px;
+    }
+
+ /* core of who I am page */
+ .jumbo-links li {
+    display:block;
+}
+#works-grid {
+    width: 470px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3,194.5px);
+}
+}
+
+

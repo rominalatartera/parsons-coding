@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="utf-8">
+<title>Week 3 Quiz/homework on Selections</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<main>
+<section>
+	<header>
+		<h1>Selection Worksheet</h1>
+		<nav>		
+			<ul>
+				<li><a href="#">one</a></li>
+				<li><a href="#">two</a></li>
+				<li><a href="#">three</a></li>
+				<li><a href="#">four</a></li>
+				<li><a href="#">five</a></li>
+			</ul>		
+		</nav>	
+	</header>	
+		<article id="type">
+		<h2>Part 1: Type Selectors</h2>		
+		<p>Instructions: 
+		<p>You are to fill in the CSS only. Do not change the HTML markup
+		<ol>
+			<li>Target main and give max-width of 1500px.
+			<li>Target section and make max-width 1000px, margin auto, and give it an outline of 2px solid black. Only 5px will show, the rest will be hidden by the content.
+			<li>Target ordered and unordered lists and give them a decimal list-style and 20px padding.
+			<li>Target h1 through h6 and set font-size to 1.5em, font-weight to 700, color to #555 and padding to 30px top, 0px on the sides and 10px on the bottom.
+			<li>Target paragraphs and list items and set the line-height to 1.2em and margin to 7px top, none on the sides and 3px on the botom.
+			<li>
+			<li>Target the header and color the background orange.
+			<li>Target article and color the background silver;
+			<li>Target article list items and make the background lightgreen.
+			<li>Target h1 and turn the type gold and background black. Hint, type is color. Center the text using text-align and increase font size to 3em.
+			<li>Target h2 and make the background yellow and a left-padding of 35px.
+			<li>Target the text <span> spanned in this sentence</span> and color it rebeccapurple while coloring the type white.  Named in honor of Eric Meyer's little girl who died of brain cancer at the age of 6.
+			<li>Target the &lt;span> in the Universal Selector article and color the background red 
+			<li>Target the paragraphs in this article and make the text bold.
+			<li>Target body and give 10px padding on top and bottom and 25px padding on the sides and give the body a pink background color.
+			<li>Target the h2, p, and ol and give left margin of 15px.
+			<li>Target the list items in the header and change their display to inline-block.
+		</ol>
+	</article>
+	<article id=universal >
+		<h2>Part 2: Universal Selector</h2>		
+		<ol>
+			<li> <span>Select all html elements and give them a 1px outline of solid blue with 20% alpha hsl(250 100 50 /.2);</span> 
+			<li> Change the box-sizing to border-box. You will learn about this next week but it changes the way width and height of elements are calculated. The default is set to content-box which adds the width and height of padding and border increasing the side of the element. This option keeps the element size the same and subtracts the padding and border from that. 
+			<li> The universal selector becomes more useful when used to select all elements inside of another element. This article has id=universal. Select all elements inside of it and turn background to silver.
+		</ol>
+	</article>
+	<article>
+		<h2>Part 3: Pseudo Selectors</h2>		
+			<ol>
+			<li>Remove the underline from the navigation links and color them white. Color background red.
+			<li>Give links a 10 pixel margins, 10px 20px padding and set their display to inline-block.
+			<li>Style the hover green.
+			<li>Target every odd list item in the articles with background color lightblue :nth-child(odd).
+		</ol>
+	</article>
+	<article>
+		<h2>Part 4: Media Queries</h2>
+		<ol>
+			<li>In the head set the viewport to the device screen size and force zoom to be 1:1 &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+			<li>create a media query set to max-width 600px @media all and (max-width: 600px) { }
+			<li>Change the menu from horizontal to vertical by changing the nav li display to block.  The menu will now change whenever the viewport is less than 600 pixels.
+		</ol>
+	</article>
+
+  <footer class="footer">
+	  <p>Copy your code and paste it into the 
+		<a href="http://validator.w3.org/#validate-by-input+task_conformance" target="_blank"> Validator</a> to make sure there are no errors. Check your <a href="http://b.parsons.edu/~dejongo/12-fall/stuff/03-seclector_exercise-finished.html" target="_blank">answer</a>
+  </footer>
+</section>
+</main>
+</body>
+</html>                    
